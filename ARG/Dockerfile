@@ -5,5 +5,6 @@ ENV project="expense"\
       component="frontend"\
       author="rushhav"
 ARG USERNAME=rushhav
+ENV USERNAME=${USERNAME}
 RUN echo "Hello I am ${USERNAME}, image version ${version}" > /tmp/devops.txt
 CMD [ "sleep","100" ]
