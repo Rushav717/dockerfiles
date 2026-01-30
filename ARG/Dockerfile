@@ -3,5 +3,6 @@ ENV project="expense"\
       environment="dev"\
       component="frontend"\
       author="rushhav"
-RUN echo "Hello I am ${author}" > /tmp/devops.txt
+ARG USERNAME=rushhav
+RUN echo "Hello I am ${USERNAME}"
 CMD [ "sleep","100" ]
